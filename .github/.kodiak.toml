@@ -8,7 +8,7 @@ require_automerge_label = false # default: true
 [merge]
 method = "squash" # default: "merge"
 delete_branch_on_merge = true # default: false
-require_automerge_label = true
+require_automerge_label = false
 
 # # don't wait for running status checks when a PR needs update.
 # optimistic_updates = true # default: true
