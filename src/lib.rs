@@ -34,10 +34,6 @@ pub enum B {
     V3(bool),
 }
 
-pub struct Gen<'a, T> {
-    t: &'a T,
-}
-
 fn main() {
     println!("work")
 }
