@@ -34,6 +34,8 @@ pub enum B {
     V3(bool),
 }
 
+struct Username(String);
+
 fn main() {
     println!("work")
 }
