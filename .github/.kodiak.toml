@@ -8,6 +8,7 @@ require_automerge_label = false # default: true
 [merge]
 method = "squash" # default: "merge"
 delete_branch_on_merge = true # default: false
+require_automerge_label = true
 
 # # don't wait for running status checks when a PR needs update.
 # optimistic_updates = true # default: true
@@ -15,18 +16,18 @@ delete_branch_on_merge = true # default: false
 # # if a PR is ready, merge it, don't place it in the merge queue.
 # prioritize_ready_to_merge = true # default: false
 
-# [merge.message]
-# # use title of PR for merge commit.
-# title = "pull_request_title" # default: "github_default"
+[merge.message]
+# use title of PR for merge commit.
+title = "pull_request_title" # default: "github_default"
 
-# # use body of PR for merge commit.
-# body = "pull_request_body" # default: "github_default"
+# use body of PR for merge commit.
+body = "pull_request_body" # default: "github_default"
 
-# # add the PR number to the merge commit title, like GitHub.
-# include_pr_number = true # default: true
+# add the PR number to the merge commit title, like GitHub.
+include_pr_number = true # default: true
 
-# # use the default markdown content of the PR for the merge commit.
-# body_type = "markdown" # default: "markdown"
+# use the default markdown content of the PR for the merge commit.
+body_type = "markdown" # default: "markdown"
 
-# # remove html comments to auto remove PR templates.
-# strip_html_comments = true # default: false
+# remove html comments to auto remove PR templates.
+strip_html_comments = true # default: false
