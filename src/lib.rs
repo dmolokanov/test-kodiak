@@ -26,6 +26,10 @@ impl A {
         println!("a log message");
         Self { b }
     }
+
+    pub fn show(&self) {
+        println!("{}", self.b)
+    }
 }
 
 pub enum B {
@@ -36,5 +40,5 @@ pub enum B {
 
 fn main() {
     let a = A::new(2);
-    println!("{}", a.b)
+    a.show();
 }
