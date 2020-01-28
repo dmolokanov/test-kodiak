@@ -27,7 +27,7 @@ impl A {
         Self { b }
     }
 
-    pub fn show(&self) {
+    pub fn print(&self) {
         println!("{}", self.b)
     }
 }
@@ -40,5 +40,5 @@ pub enum B {
 
 fn main() {
     let a = A::new(2);
-    a.show();
+    a.print();
 }
