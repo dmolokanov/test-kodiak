@@ -27,7 +27,7 @@ impl A {
         Self { b }
     }
 
-    pub fn show(&self) {
+    pub fn print(&self) {
         println!("{}", self.b)
     }
 }
