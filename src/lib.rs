@@ -41,4 +41,7 @@ pub enum B {
 fn main() {
     let a = A::new(2);
     a.show();
+
+    let b = A::new(3);
+    b.show();
 }
