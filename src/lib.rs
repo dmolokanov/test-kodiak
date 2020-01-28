@@ -37,3 +37,7 @@ pub enum B {
     V2(String),
     V3(bool),
 }
+
+fn main() {
+    let _b = B::V1;
+}
