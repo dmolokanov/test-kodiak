@@ -37,8 +37,3 @@ pub enum B {
     V2(String),
     V3(bool),
 }
-
-fn main() {
-    let a = A::new(2);
-    a.print();
-}
