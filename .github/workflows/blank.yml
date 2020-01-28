@@ -29,6 +29,9 @@ jobs:
           command: check
           args: --all --bins --examples
 
+      - name: sleep
+        run: sleep 60
+
       - name: tests
         uses: actions-rs/cargo@v1
         with:
