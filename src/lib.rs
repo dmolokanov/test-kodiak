@@ -39,7 +39,7 @@ pub enum B {
 }
 
 // Function that returns a boolean value
-fn is_divisible_by(lhs: u32, rhs: u32) -> bool {
+fn can_divide(lhs: u32, rhs: u32) -> bool {
     // Corner case, early return
     if rhs == 0 {
         return false;
@@ -51,11 +51,11 @@ fn is_divisible_by(lhs: u32, rhs: u32) -> bool {
 
 // Functions that "don't" return a value, actually return the unit type `()`
 fn fizzbuzz(n: u32) {
-    if is_divisible_by(n, 15) {
+    if can_divide(n, 15) {
         println!("fizzbuzz");
-    } else if is_divisible_by(n, 3) {
+    } else if can_divide(n, 3) {
         println!("fizz");
-    } else if is_divisible_by(n, 5) {
+    } else if can_divide(n, 5) {
         println!("buzz");
     } else {
         println!("{}", n);
