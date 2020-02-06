@@ -60,6 +60,16 @@ fn fizzbuzz(n: u32) {
     } else {
         println!("{}", n);
     }
+
+    if is_divisible_by(n, 15) {
+        println!("fizzbuzz");
+    } else if is_divisible_by(n, 3) {
+        println!("fizz");
+    } else if is_divisible_by(n, 5) {
+        println!("buzz");
+    } else {
+        println!("{}", n);
+    }
 }
 
 // When a function returns `()`, the return type can be omitted from the
